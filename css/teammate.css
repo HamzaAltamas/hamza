@@ -29,7 +29,7 @@
     text-transform: capitalize;
     font-family: 'Bebas Neue', cursive;
 }
-*::-webkit-scrollbar { width: 0 !important }
+
 *::selection{
     background-color: var(--yellow);
     color: #fff;
