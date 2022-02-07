@@ -1,0 +1,256 @@
+/* dark mood color */
+:root{
+    --yellow:#e42417;
+    --black:#ffffff;
+    --white:#57606f;
+}
+/* dark mood color end */
+/* light mood color  */
+:root{
+    --pink:#e42417;
+    --white:#ffffff;
+    --textcolor:#57606f;
+    
+}
+/* light mood color */
+/* common css start */
+*{
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    outline: none;
+    text-transform: capitalize;
+    font-family: 'Bebas Neue', cursive;
+}
+*::-webkit-scrollbar { width: 0 !important }
+*::selection{
+    background-color: var(--yellow);
+    color: #fff;
+}
+html{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    display: inline-block !important;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color: var(--black);
+    padding-bottom: 100px;
+}
+.active{
+   
+    --yellow:#f9ca24;
+    --black:#2d3436;
+    --white:#fff;
+}
+/* common css end */
+
+
+.navs{
+    width: 100px;
+    height: 400px ;
+ 
+    position: fixed;
+    right: 0;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 9999;
+ 
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.navs ul {
+    position: absolute;
+    left: -15px !important;
+}
+.navs ul li{
+    width: 50px;
+    height: 50px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+    color: white;
+    
+    
+}
+.navs ul li  i{
+    color: #fff;
+    font-size: 20px;
+}
+.navs ul li a i{
+    color: #fff;
+    font-size: 20px;
+
+}
+.navname{
+    position: absolute;
+    width: 0px;
+    background-color: var(--yellow);
+    height: 50px;
+    z-index: -1;
+    right: 0;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    opacity: 0;
+}
+.navname h3{
+    line-height: 50px;
+    margin-left: 30px;
+}
+.navs ul li:hover .navname{
+    width: 200px;
+    opacity: 1;
+}
+
+
+/* about start */
+.test{
+    background-color: var(--black);
+    min-height: 100vh;
+    position: relative;
+}
+.testactive{
+    background-color: var(--black) !important;
+    color: var(--yellow) !important;
+}
+.testactive h3{
+    color: var(--white) !important;
+}
+.testactive i{
+    color: var(--yellow) !important;
+}
+.testheading{
+    padding: 20px;
+    text-align: center;
+    color: var(--white);
+    
+    font-weight: bold;
+}
+.testheading span{
+    
+    color: var(--yellow);
+    
+    
+}
+.testheading h1{
+    font-size: 100px;
+}
+
+/* blog body start */
+.blogiteminner{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: var(--yellow);
+    color: #fff;
+    position: relative;
+    margin-top: 15px;
+    
+}
+.blogdash{
+    position: absolute;
+    z-index: 999;
+    width: 0;
+    height: 6px;
+    opacity: 0;
+    background-color: #fff;
+    
+   
+}
+.blogiteminner img{
+    width: 200%;
+    height: auto;
+    
+    
+}
+.blogiteminner:hover .blogdash{
+    opacity: 1;
+    width: 100%;
+} 
+.blogiteminner:hover img{
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+}
+.binnertxt{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--yellow);
+    z-index: 9;
+}
+.bloglayer{
+    background-color: var(--yellow);
+    z-index: 99;
+    position: relative;
+}
+.blogiteminner:hover .bloglayer{
+    background-color: var(--white);
+    color: var(--yellow);
+}
+.blogiteminner:hover{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    box-shadow: 0 0 20px var(--white);
+}
+/* Custom Cursor */
+.mouse-cursor{position: fixed; left: 0; top: 0; pointer-events: none; border-radius: 50%; -webkit-transform: translateZ(0); transform: translateZ(0); visibility: hidden; }
+			.cursor-inner {margin-left: -3px; margin-top: -3px; width: 8px; height: 8px; z-index: 100000000000000000000000; background-color: var(--yellow); -webkit-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out; transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out; }
+			.cursor-inner.cursor-hover {margin-left: -40px; margin-top: -40px; width: 80px; height: 80px; background-color: var(--yellowoverlay); opacity: .3; }
+			.cursor-outer {margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; background-color: var(--yellowoverlay); -webkit-box-sizing: border-box; box-sizing: border-box; z-index: 100000000000000000; opacity: .5; -webkit-transition: all .08s ease-out; transition: all .08s ease-out; }
+			.cursor-outer.cursor-hover{opacity: 0; }
+			body[data-magic-cursor="hide"] .mouse-cursor{display: none; opacity: 0; visibility: hidden; position: absolute; z-index: 111111111111; }
+
+/*Footer start*/
+            .codepen_profile{position: fixed; right: 20px; bottom: 20px;}
+            .codepen_profile a {background: rgb(245 122 32 / 53%); padding: 15px; border-radius: 50%; box-shadow: hsl(0deg 0% 80%) 0 5px 16px; height: 60px; width: 60px; display: inline-block; }
+            /*Footer End*/
+/* custom cursor end */
+@media  (min-width: 500px) and  (max-width: 768px) { 
+    .testheading h1{
+        font-size: 70px;
+    }
+    
+
+}
+@media  (min-width: 200px) and  (max-width: 499px) { 
+    
+    .testheading h1{
+        font-size: 50px;
+        text-align: left;
+    }
+
+}
+
+
