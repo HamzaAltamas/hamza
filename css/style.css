@@ -29,7 +29,7 @@
     font-family: 'Bebas Neue', cursive;
     cursor: none;
 }
-*::-webkit-scrollbar { width: 0 !important }
+
 *::selection{
     background-color: var(--yellow);
     color: #fff;
