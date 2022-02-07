@@ -32,7 +32,7 @@
    scroll-behavior: smooth;
 
 }
-*::-webkit-scrollbar { width: 0 !important }
+
 *::selection{
     background-color: var(--yellow);
     color: #fff;
